@@ -12,6 +12,7 @@ public class MenuService implements MenuServiceImpl {
     public void drawMenu(String id, InputService inputService, User user, UserService userService, AtmService atmService, FileService fileService) throws IOException, ClassNotFoundException, InterruptedException {
 
         String value = null;
+
         List<Object> values;
 
         List<Object> keys;

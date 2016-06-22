@@ -13,6 +13,7 @@ public class InputService {
     }
     //ввод pin-сode
     protected Integer enterCode() throws IOException {
+
         System.out.println("Введите PIN код");
 
         InputStreamReader isr = new InputStreamReader(System.in);

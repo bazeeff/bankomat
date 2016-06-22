@@ -11,7 +11,9 @@ public class FileService implements FileServiceImpl{
     public List<User> listUser() throws IOException, ClassNotFoundException {
 
         File listFile = new File(path);
+
         File exportFiles[] = listFile.listFiles();
+
         List<User> users = new LinkedList<User>();
 
         for (int i = 0; i < exportFiles.length; i++) {

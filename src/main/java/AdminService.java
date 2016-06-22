@@ -7,6 +7,7 @@ import java.util.*;
 public  class AdminService extends  MenuService implements Serializable, AdminServiceImpl  {
 
     private InputService inputService = new InputService();
+
     public  String path = "./src/users/";
 
     public Integer counter = countFile();

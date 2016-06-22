@@ -28,6 +28,7 @@ public class User extends InputService implements Serializable {
     protected User() {
     }
 
+
     public Long getId() {
         return id;
     }

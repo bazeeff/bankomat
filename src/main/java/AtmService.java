@@ -21,7 +21,9 @@ public class AtmService {
 
     protected  BigDecimal getCacheAtmToFile() {
         File file = null;
+
         FileReader fileReader = null;
+
         try {
             file = new File("./src/money/cachAtm.txt");
             fileReader = new FileReader(file);

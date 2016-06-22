@@ -6,6 +6,7 @@ import java.io.IOException;
 public interface MenuServiceImpl {
 
     void drawMenu(String id, InputService inputService, User user, UserService userService, AtmService atmService, FileService fileService) throws IOException, ClassNotFoundException, InterruptedException;
+
     void drawMenu(InputService inputService, AtmService atmService, AdminService adminService, FileService fileService) throws IOException, ClassNotFoundException, InterruptedException;
 
 }
