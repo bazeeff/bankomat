@@ -18,22 +18,14 @@ public class UserService extends MenuService implements Serializable, UserServic
         return null; }
 
     public boolean existenceOfUser(Integer code, Long id,FileService fileService) throws IOException, ClassNotFoundException {
-
+       
         List<User> users = fileService.listUser();
 
-        Boolean flag = null;
-
         for(User u: users){
-            if ((id.toString().equals(u.getId().toString()))&&(code.toString().equals(u.getCode().toString()))) {
-
-                flag=true;
-                break;
-            } else {flag=false;}
-
+            if ((id.toString().equals(u.getId().toString())) && (code.toString().equals(u.getCode().toString()))) {
+               return true;
+            }
         }
-
-        return  flag;}
-
-
-
+        return false;
+    }
 }
